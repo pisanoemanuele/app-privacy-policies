@@ -8,4 +8,4 @@ All clipboard history is stored locally on your device and is never shared with 
 
 ClipList does not use analytics, tracking, or advertising SDKs.
 
-For any questions: emanuele.pisano@mac.com
+For any questions: 12_bob_stoviglie@icloud.com
