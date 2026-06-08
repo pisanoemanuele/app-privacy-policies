@@ -8,4 +8,4 @@ All operations are performed locally on your device. No data is shared with thir
 
 Best Rename does not use analytics, tracking, or advertising SDKs.
 
-For any questions: emanuele.pisano@mac.com
+For any questions: 12_bob_stoviglie@icloud.com
