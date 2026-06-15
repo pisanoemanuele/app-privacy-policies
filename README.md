@@ -1,0 +1,8 @@
+Privacy Policy — TravelDiary
+
+Last updated: June 2026
+TravelDiary does not collect, store, or transmit any personal data to external servers.
+All data — including visited places, favorites, notes, and trip plans — is stored exclusively on your device and, if iCloud is enabled, in your personal iCloud account. No one, including the developer, can access your data.
+Location data is used exclusively on-device to detect visited places and is never shared with third parties or transmitted over the internet.
+TravelDiary does not use analytics, tracking, or advertising SDKs of any kind.
+For any questions: 12_bob_stoviglie@icloud.com
