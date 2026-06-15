@@ -1,1 +1,29 @@
-12_bob_stoviglie@icloud.com
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — TravelDiary</title>
+<style>
+  body { font-family: -apple-system, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.7; }
+  h1 { font-size: 22px; font-weight: 600; margin-bottom: 4px; }
+  p.date { color: #888; font-size: 14px; margin-top: 0; margin-bottom: 32px; }
+  p { font-size: 16px; }
+  a { color: #FF6B00; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — TravelDiary</h1>
+<p class="date">Last updated: June 2026</p>
+
+<p>TravelDiary does not collect, store, or transmit any personal data to external servers.</p>
+
+<p>All data — including visited places, favorites, notes, and trip plans — is stored exclusively on your device and, if iCloud is enabled, in your personal iCloud account. No one, including the developer, can access your data.</p>
+
+<p>Location data is used exclusively on-device to detect visited places and is never shared with third parties or transmitted over the internet.</p>
+
+<p>TravelDiary does not use analytics, tracking, or advertising SDKs of any kind.</p>
+
+<p>For any questions: <a href="mailto:12_bob_stoviglie@icloud.com">12_bob_stoviglie@icloud.com</a></p>
+</body>
+</html>
