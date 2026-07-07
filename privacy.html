@@ -1,47 +1,276 @@
-# Informativa sulla Privacy
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy — Emanuele Pisano</title>
+<style>
+  :root {
+    --page-bg: #F2F2F7;
+    --card-bg: #FFFFFF;
+    --text-primary: #1C1C1E;
+    --text-secondary: #6E6E73;
+    --text-tertiary: #AEAEB2;
+    --divider: #E5E5EA;
+    --orange: #FF9500;
+    --orange-dark: #C96F00;
+    --green-off: #34C759;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page-bg);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+  }
+  .nav-title {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 8px 2px 2px;
+    animation: fadeIn 0.5s ease both;
+  }
+  .nav-sub {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0 2px 28px;
+    animation: fadeIn 0.5s ease 0.05s both;
+  }
+  .section-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin: 28px 6px 8px;
+  }
+  .section-label:first-of-type { margin-top: 0; }
+  .card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+    animation: fadeIn 0.5s ease both;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-bottom: 0.5px solid var(--divider);
+  }
+  .row:last-child { border-bottom: none; }
+  .icon-badge {
+    width: 29px;
+    height: 29px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .icon-badge svg { width: 17px; height: 17px; }
+  .row-label {
+    font-size: 15.5px;
+    flex: 1;
+    min-width: 0;
+  }
+  .row-detail {
+    font-size: 15.5px;
+    color: var(--text-secondary);
+    text-align: right;
+    max-width: 55%;
+  }
+  /* iOS toggle, static/off */
+  .toggle-off {
+    width: 51px;
+    height: 31px;
+    border-radius: 16px;
+    background: #E9E9EB;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .toggle-off::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 3px 1px rgba(0,0,0,0.05);
+  }
+  /* app icons */
+  .app-row { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 0.5px solid var(--divider); }
+  .app-row:last-child { border-bottom: none; }
+  .app-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .app-icon.mac {
+    border-radius: 22%;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+  }
+  .app-name { font-size: 15.5px; flex: 1; }
+  .app-platform {
+    font-size: 12.5px;
+    color: var(--text-tertiary);
+    font-weight: 500;
+  }
+  .prose {
+    padding: 2px 6px 0;
+  }
+  .prose p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-primary);
+    margin: 0 0 12px;
+  }
+  .prose p:last-child { margin-bottom: 0; }
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: var(--text-tertiary);
+  }
+  footer .credit {
+    color: var(--orange-dark);
+    font-weight: 600;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-**Ultimo aggiornamento:** luglio 2026
+  <div class="nav-title">Privacy</div>
+  <div class="nav-sub">Ultimo aggiornamento: luglio 2026</div>
 
-Questa informativa sulla privacy si applica a tutte le app sviluppate da Emanuele Pisano disponibili su App Store e Mac App Store, incluse:
+  <div class="section-label">In breve</div>
+  <div class="card">
+    <div class="row">
+      <div class="icon-badge" style="background:#8E8E93;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 8-7 9-3.5-1-7-4-7-9V6l7-3z"/></svg>
+      </div>
+      <div class="row-label">Raccolta dati</div>
+      <div class="toggle-off" role="img" aria-label="Disattivata"></div>
+    </div>
+    <div class="row">
+      <div class="icon-badge" style="background:#3478F6;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 17a4 4 0 010-8 5 5 0 019.6-1.5A4.5 4.5 0 0118.5 17H6z"/></svg>
+      </div>
+      <div class="row-label">Dove restano i dati</div>
+      <div class="row-detail">Dispositivo e iCloud personale</div>
+    </div>
+    <div class="row">
+      <div class="icon-badge" style="background:#FF9500;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      </div>
+      <div class="row-label">Analytics o pubblicità</div>
+      <div class="row-detail">Nessuno</div>
+    </div>
+  </div>
 
-**iOS**
-- TravelDiary
-- iVat CalcPro
-- Ristooorante
+  <div class="section-label">Le app coperte da questa informativa</div>
+  <div class="card">
+    <div class="app-row">
+      <div class="app-icon" style="background:#FF9500;">TD</div>
+      <div class="app-name">TravelDiary</div>
+      <div class="app-platform">iOS</div>
+    </div>
+    <div class="app-row">
+      <div class="app-icon" style="background:#34C759;">iV</div>
+      <div class="app-name">iVat CalcPro</div>
+      <div class="app-platform">iOS</div>
+    </div>
+    <div class="app-row">
+      <div class="app-icon" style="background:#FF3B30;">R</div>
+      <div class="app-name">Ristooorante</div>
+      <div class="app-platform">iOS</div>
+    </div>
+    <div class="app-row">
+      <div class="app-icon mac" style="background:#007AFF;">CL</div>
+      <div class="app-name">ClipList</div>
+      <div class="app-platform">macOS</div>
+    </div>
+    <div class="app-row">
+      <div class="app-icon mac" style="background:#AF52DE;">Z</div>
+      <div class="app-name">Zipper</div>
+      <div class="app-platform">macOS</div>
+    </div>
+    <div class="app-row">
+      <div class="app-icon mac" style="background:#FFCC00; color:#5C4400;">QA</div>
+      <div class="app-name">QuickAdd Event</div>
+      <div class="app-platform">macOS</div>
+    </div>
+    <div class="app-row">
+      <div class="app-icon mac" style="background:#5856D6;">BR</div>
+      <div class="app-name">Best Rename</div>
+      <div class="app-platform">macOS</div>
+    </div>
+  </div>
 
-**macOS**
-- ClipList
-- Zipper
-- QuickAdd Event
-- Best Rename
+  <div class="section-label">Raccolta dati</div>
+  <div class="card">
+    <div class="prose">
+      <p>Queste app non raccolgono, non trasmettono e non condividono alcun dato personale con lo sviluppatore o con terze parti. Non sono presenti server esterni, strumenti di analisi o SDK pubblicitari.</p>
+      <p>Tutti i contenuti creati nell'app — viaggi, note, calcoli, elenchi, appunti, file rinominati — restano esclusivamente sul dispositivo dell'utente e, quando previsto, sincronizzati tramite l'account iCloud personale dell'utente stesso (Apple CloudKit). Nessuno di questi dati è accessibile allo sviluppatore.</p>
+    </div>
+  </div>
 
-## Raccolta dati
+  <div class="section-label">Permessi di sistema</div>
+  <div class="card">
+    <div class="prose">
+      <p>Alcune app richiedono permessi (posizione, calendario, foto, notifiche) solo per fornire le funzionalità richieste dall'utente. Questi dati non lasciano il dispositivo o l'account iCloud personale, salvo condivisione manuale ed esplicita da parte dell'utente tramite il pannello di condivisione di sistema.</p>
+    </div>
+  </div>
 
-Queste app non raccolgono, non trasmettono e non condividono alcun dato personale con lo sviluppatore o con terze parti. Non sono presenti server esterni, analytics, strumenti di tracciamento o SDK pubblicitari.
+  <div class="section-label">Servizi di terze parti</div>
+  <div class="card">
+    <div class="prose">
+      <p>Su azione esplicita dell'utente, le app possono aprire servizi esterni (ad esempio Apple Maps, Google Maps, Booking.com o altre app di navigazione installate) per funzionalità aggiuntive. L'uso di questi servizi è regolato dalle rispettive informative sulla privacy, non controllate dallo sviluppatore.</p>
+    </div>
+  </div>
 
-Tutti i dati creati o gestiti dall'app (ad esempio: viaggi, note, calcoli, elenchi, appunti, file rinominati) restano esclusivamente:
+  <div class="section-label">Minori</div>
+  <div class="card">
+    <div class="prose">
+      <p>Le app non sono dirette a un pubblico di minori e non raccolgono dati da nessun utente, indipendentemente dall'età.</p>
+    </div>
+  </div>
 
-- memorizzati localmente sul dispositivo dell'utente, e/o
-- sincronizzati tramite iCloud personale dell'utente (Apple CloudKit), quando l'app lo prevede
+  <div class="section-label">Modifiche e contatti</div>
+  <div class="card">
+    <div class="prose">
+      <p>Questa informativa può essere aggiornata periodicamente; eventuali modifiche saranno pubblicate a questo stesso indirizzo. Per domande è possibile contattare lo sviluppatore tramite la pagina dell'app su App Store o Mac App Store.</p>
+    </div>
+  </div>
 
-Nessuno di questi dati è accessibile allo sviluppatore.
+  <footer>
+    by <span class="credit">emanuelepisano</span> · con l'aiuto di Claude
+  </footer>
 
-## Permessi di sistema
-
-Alcune app possono richiedere permessi di sistema (es. posizione, calendario, foto, notifiche) esclusivamente per fornire le funzionalità richieste dall'utente all'interno dell'app stessa. Questi dati non lasciano mai il dispositivo/l'account iCloud personale dell'utente, salvo dove esplicitamente indicato dall'utente stesso (es. condivisione manuale tramite il pannello di condivisione di iOS/macOS).
-
-## Servizi di terze parti
-
-Le app possono aprire, su azione esplicita dell'utente, servizi di terze parti (ad esempio Apple Maps, Google Maps, Booking.com, o altre app di navigazione installate sul dispositivo) per fornire funzionalità aggiuntive. L'uso di questi servizi è soggetto alle rispettive informative sulla privacy, che lo sviluppatore non controlla.
-
-## Minori
-
-Le app non sono dirette a un pubblico di minori e non raccolgono consapevolmente dati da minori, in quanto non raccolgono dati da nessun utente.
-
-## Modifiche a questa informativa
-
-Questa informativa può essere aggiornata periodicamente. Eventuali modifiche saranno pubblicate a questo stesso indirizzo.
-
-## Contatti
-
-Per domande relative a questa informativa sulla privacy, è possibile contattare lo sviluppatore tramite la pagina dell'app su App Store o Mac App Store.
+</div>
+</body>
+</html>
